@@ -1,0 +1,36 @@
+// Test Script
+/*
+Integer count = 50;
+
+Integer a = 0;
+Integer b = 1;
+
+for (Integer i = 0; i < count; i++) {
+    System.debug(a);
+    Integer next = a + b;
+    a = b;
+    b = next;
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    Integer count = 50;
+
+    Integer a = 0;
+    Integer b = 1;
+    
+    for (Integer i = 0; i < count; i++) {
+
+        if (i == 0) {
+            System.assertEquals(0, a, 'The Fibonacci number at position ' + i + ' should be 0' );
+        }
+        Integer next = a + b;
+        a = b;
+        b = next;
+    }
+
+} catch (Exception exc) {
+    throw new CustomException('There is an error: ' + exc.getMessage());
+}
