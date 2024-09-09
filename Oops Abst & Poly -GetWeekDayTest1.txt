@@ -1,0 +1,68 @@
+//Test Script
+/*
+public class DisplayWeekDay {
+  
+public Integer weekNum;
+
+    public String getWeekday() {
+        String weekDay;
+        if (weekNum == 1) {
+            weekDay = 'Sunday';
+        } else if (weekNum == 2) {
+            weekDay = 'Monday';
+        } else if (weekNum == 3) {
+            weekDay = 'Tuesday';
+        } else if (weekNum == 4) {
+            weekDay = 'Wednesday';
+        } else if (weekNum == 5) {
+            weekDay = 'Thursday';
+        } else if (weekNum == 6) {
+            weekDay = 'Friday';
+        } else if (weekNum == 7) {
+            weekDay = 'Saturday';
+        } else {
+            weekDay = 'Invalid week number, Week number should be between 1 and 7';
+        }
+        return weekDay;
+    }
+
+    // Method to get the weekday based on the passed weekNum parameter
+    public String getWeekday(Integer weekNum) {
+        String weekDay;
+        if (weekNum == 1) {
+            weekDay = 'Sunday';
+        } else if (weekNum == 2) {
+            weekDay = 'Monday';
+        } else if (weekNum == 3) {
+            weekDay = 'Tuesday';
+        } else if (weekNum == 4) {
+            weekDay = 'Wednesday';
+        } else if (weekNum == 5) {
+            weekDay = 'Thursday';
+        } else if (weekNum == 6) {
+            weekDay = 'Friday';
+        } else if (weekNum == 7) {
+            weekDay = 'Saturday';
+        } else {
+            weekDay = 'Invalid week number, Week number should be between 1 and 7';
+        }
+        return weekDay;
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    DisplayWeekDay dw = new DisplayWeekDay();
+    
+    dw.weekNum = 4;
+    dw.getWeekday();
+    System.assertEquals('Wednesday', dw.getWeekday());
+
+    dw.getWeekday(4);        
+    System.assertEquals('Wednesday', dw.getWeekday(4));
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

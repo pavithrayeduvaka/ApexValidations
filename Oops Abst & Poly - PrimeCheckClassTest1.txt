@@ -1,0 +1,37 @@
+//Test Script
+/*
+public class PrimeCheck {
+
+    public Integer n;
+
+    public String checkPrime() {
+        if (n == null) {
+            return 'Number is not set';
+        }
+        if (n <= 1) {
+            return 'Not a prime number';
+        }
+        for (Integer i = 2; i * i <= n; i++) {
+            if (Math.mod(n, i) == 0) {
+                return 'Not a prime number';
+            }
+        }
+        return 'Prime number';
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    PrimeCheck pc = new PrimeCheck();
+    
+    pc.n = 7;
+    System.assertEquals('Prime number', pc.checkPrime());
+
+    pc.n = 10;
+    System.assertEquals('Not a prime number', pc.checkPrime());
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

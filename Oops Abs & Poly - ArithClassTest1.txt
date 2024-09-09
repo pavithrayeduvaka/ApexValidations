@@ -1,0 +1,55 @@
+//Test Script
+/*
+public class ArithmeticOperations {
+
+public integer num1;
+public integer num2;
+    
+    public Integer addition() {
+    return num1 + num2;
+    }
+
+    public Integer subtraction() {
+    return num1 - num2;
+    }
+
+    
+    public Integer multiplication() {
+    return num1 * num2;
+    }
+
+    public Decimal division() {
+    return num1 / num2;
+    }
+
+    public Integer modulus() {
+    return Math.mod(num1, num2);
+    }
+}
+
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    ArithmeticOperations ops = new ArithmeticOperations();
+
+    ops.num1 = 10;
+    ops.num2 = 2;
+    ops.addition();    
+    System.assertEquals(12, ops.addition());
+
+    ops.subtraction();
+    System.assertEquals(8, ops.subtraction());
+
+    ops.multiplication();
+    System.assertEquals(20, ops.multiplication());
+
+    ops.division();
+    System.assertEquals(5, ops.division());
+
+    ops.modulus();
+    System.assertEquals(0, ops.modulus());
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

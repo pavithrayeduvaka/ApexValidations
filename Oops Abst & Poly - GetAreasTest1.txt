@@ -1,0 +1,37 @@
+//Test Script
+/*
+public class ShapeAreas {
+
+        public integer rectangleArea(integer length, integer breadth) {
+                
+        return length * breadth;
+    }
+
+        public decimal circleArea(decimal radius) {
+    
+        Decimal pi = 3.14;
+        return pi * radius * radius;
+    }
+
+        public decimal triangleArea(decimal base, decimal height) {
+        return 0.5 * base * height;
+    }
+}
+*/
+PLACEHOLDER
+public class MathException extends Exception {}
+
+try {
+    ShapeAreas shapeAreas = new ShapeAreas();
+    shapeAreas.rectangleArea(10, 5);
+    System.assertEquals(50, shapeAreas.rectangleArea(10, 5));
+
+    shapeAreas.circleArea(7.5);
+    System.assertEquals(23.55, shapeAreas.circleArea(7));
+
+    shapeAreas.triangleArea(8, 4);
+    System.assertEquals(16, shapeAreas.triangleArea(8, 4));
+
+} catch (Exception exc) {
+    throw new MathException('There was an error: ' + exc.getMessage());
+}
