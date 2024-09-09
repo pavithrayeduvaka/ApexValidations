@@ -1,0 +1,40 @@
+//Test Script
+/*
+public class Student {
+
+      public string name;
+      public integer rollNo;
+      public integer standard;
+      public string gender;
+      public integer age;
+
+public void displayStudentInformation(){
+system.debug(name);
+system.debug(rollNo);
+system.debug(standard);
+system.debug(gender);
+system.debug(age);
+}
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    Student s = new Student();
+    s.name = 'Eswar';
+    s.rollNo = 11;
+    s.standard = 4;
+    s.gender = 'Male';
+    s.age = 34;
+    s.displayStudentInformation();
+    System.assertEquals('Eswar', s.name);
+    System.assertEquals(11, s.rollNo);
+    System.assertEquals(4, s.standard);
+    System.assertEquals('Male', s.gender);
+    System.assertEquals(34, s.age);
+
+
+} catch (Exception exc) {
+    throw new CustomException('There is an error: ' + exc.getMessage());
+}
