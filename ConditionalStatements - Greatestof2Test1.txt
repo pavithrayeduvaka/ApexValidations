@@ -1,0 +1,22 @@
+//Test Script
+/*
+integer x = 50;
+integer y = 55;
+integer greatest;
+if(x > y){
+greatest = x;
+}
+else{
+greatest = y;
+}
+system.debug(greatest);
+
+*/
+PLACEHOLDER
+public class CustomException extends Exception{}
+try{
+    system.assertEquals(55, greatest);
+   
+} catch(Exception exc){
+    throw new CustomException('there is a error '+exc.getMessage());
+}

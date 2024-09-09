@@ -1,0 +1,22 @@
+//Test Script
+/*
+integer Avg = 61;
+string studentStatus;
+if(Avg > 50 ){
+studentStatus = 'passed';
+}
+else{
+studentStatus = 'failed';
+}
+system.debug(studentStatus);
+
+*/
+PLACEHOLDER
+public class CustomException extends Exception{}
+try{
+   
+    System.assertequals('passed', studentStatus);
+    
+} catch(Exception exc){
+    throw new CustomException('there is a error '+exc.getMessage());
+}

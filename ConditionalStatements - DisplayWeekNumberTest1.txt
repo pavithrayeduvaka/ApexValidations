@@ -1,0 +1,8 @@
+*On the home page, add an action to create a opportunity.
+*Add a screen with major fields of opportunity,on clicking submit it will create an opportunity.
+*On the created opportunity, based on lead scource create a task on that opportunity.
+for eg- 
+if partner referral- description of the task would be "this is the opportunity made by partner referral.please have a look on this immediately".
+if Phone enquiry - description of the task would be "this is the opportunity made by Phone Enquiry.please have a look."
+if Other - description of the task would be "this is the opportunity made by other sources.please have a look.
+

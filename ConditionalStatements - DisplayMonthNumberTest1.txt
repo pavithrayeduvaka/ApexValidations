@@ -1,0 +1,52 @@
+//Test Script
+/*
+string month = 'May';
+integer monNumber;
+if(month == 'January'){
+monNumber = 1;
+}
+else if(month == 'February'){
+monNumber = 2;
+}
+else if(month == 'March'){
+monNumber = 3;
+}
+else if(month == 'April'){
+monNumber = 4;
+}
+else if(month == 'May'){
+monNumber = 5;
+}
+else if(month == 'June'){
+monNumber = 6;
+}
+else if(month == 'July'){
+monNumber = 7;
+}
+else if(month == 'August'){
+monNumber = 8;
+}
+else if(month == 'September'){
+monNumber = 9;
+}
+else if(month == 'October'){
+monNumber = 10;
+}
+else if(month == 'November'){
+monNumber = 11;
+}
+else if(month == 'December'){
+monNumber = 12;
+}
+system.debug(monNumber);
+
+*/
+PLACEHOLDER
+public class CustomException extends Exception{}
+try{
+    
+    System.assertequals(5, monNumber);
+    
+} catch(Exception exc){
+    throw new CustomException('there is a error '+exc.getMessage());
+}

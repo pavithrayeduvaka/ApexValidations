@@ -1,0 +1,29 @@
+//Test Script
+/*
+integer salary = 1400000;
+decimal checkBonus;
+if(salary > 1500000){
+checkBonus = 0.15*salary;
+}
+else if (salary > 1200000 && salary <= 1500000) {
+checkBonus = 0.12*salary;
+}
+else if (salary >= 1000000 && salary <= 1200000) {
+checkBonus = 0.10*salary;
+}
+else{
+checkBonus = 0.05*salary;
+}
+decimal ctc = salary + checkBonus;
+system.debug(ctc);
+
+*/
+PLACEHOLDER
+public class CustomException extends Exception{}
+try{
+    
+    System.assertequals(1568000, ctc);
+    
+} catch(Exception exc){
+    throw new CustomException('there is a error '+exc.getMessage());
+}
