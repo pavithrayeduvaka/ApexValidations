@@ -1,0 +1,58 @@
+//Test Script
+/*
+public class MapSum {
+
+    // Method to sum values of two maps
+    public Map<String, Integer> sumMaps(Map<String, Integer> map1, Map<String, Integer> map2) {
+        Map<String, Integer> resultMap = new Map<String, Integer>();
+        
+        for (String key : map1.keySet()) {
+            Integer value1 = map1.get(key);
+            Integer value2 = 0;
+            
+            if (map2.containsKey(key)) {
+                value2 = map2.get(key);
+            }
+            
+            resultMap.put(key, value1 + value2);
+        }
+        
+        return resultMap;
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    MapSum mapSum = new MapSum();
+    
+
+    Map<String, Integer> map1 = new Map<String, Integer>{
+        'a' => 1,
+        'b' => 2,
+        'c' => 3
+    };
+    Map<String, Integer> map2 = new Map<String, Integer>{
+        'a' => 4,
+        'b' => 5,
+        'd' => 6
+    };
+    
+    // Test sumMaps method
+    Map<String, Integer> resultMap = mapSum.sumMaps(map1, map2);
+    
+
+    Map<String, Integer> expectedMap = new Map<String, Integer>{
+        'a' => 5,
+        'b' => 7,
+        'c' => 3
+    };
+    
+
+    System.assertEquals(expectedMap, resultMap);
+    
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

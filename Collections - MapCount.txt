@@ -1,0 +1,47 @@
+//Test Script
+/*
+public class StringListToMap {
+
+    // Method to count occurrences of each string in the list
+    public Map<String, Integer> countOccurrences(List<String> inputList) {
+        Map<String, Integer> occurrencesMap = new Map<String, Integer>();
+        
+        for (String str : inputList) {
+            if (occurrencesMap.containsKey(str)) {
+                occurrencesMap.put(str, occurrencesMap.get(str) + 1);
+            } else {
+                occurrencesMap.put(str, 1);
+            }
+        }
+        
+        return occurrencesMap;
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    StringListToMap stringListToMap = new StringListToMap();
+    
+    
+    List<String> inputList = new List<String>{'apple', 'banana', 'apple', 'cherry', 'banana', 'banana', 'date'};
+    
+    
+    Map<String, Integer> occurrencesMap = stringListToMap.countOccurrences(inputList);
+    
+    
+    Map<String, Integer> expectedMap = new Map<String, Integer>{
+        'apple' => 2,
+        'banana' => 3,
+        'cherry' => 1,
+        'date' => 1
+    };
+    
+    
+    System.assertEquals(expectedMap, occurrencesMap);
+  
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

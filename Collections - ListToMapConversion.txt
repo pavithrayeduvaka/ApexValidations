@@ -1,0 +1,36 @@
+//Test Script
+/*
+public class ListToMap {
+
+    public Map<Integer, String> ListToMapConversion(List<String> inputList) {
+        Map<Integer, String> resultMap = new Map<Integer, String>();
+
+        for (Integer i = 0; i < inputList.size(); i++) {
+            resultMap.put(i, inputList.get(i));
+        }
+
+        return resultMap;
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    ListToMap listToMap = new ListToMap();
+    
+    List<String> inputList = new List<String>{'apple', 'banana', 'cherry', 'date'};
+    Map<Integer, String> resultMap = listToMap.ListToMapConversion(inputList);
+    
+    Map<Integer, String> expectedMap = new Map<Integer, String>{
+        0 => 'apple',
+        1 => 'banana',
+        2 => 'cherry',
+        3 => 'date'
+    };
+    
+    System.assertEquals(expectedMap, resultMap);
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

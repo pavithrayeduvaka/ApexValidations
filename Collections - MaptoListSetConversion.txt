@@ -1,0 +1,38 @@
+//Test Script
+/*
+public class MapToListAndSet {
+
+        public List<String> MapToList(Map<Integer, String> inputMap) {
+        return new List<String>(inputMap.values());
+    }
+
+        public Set<Integer> MapToSet(Map<Integer, String> inputMap) {
+        return new Set<Integer>(inputMap.keySet());
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    MapToListAndSet mapToListAndSet = new MapToListAndSet();
+    
+    Map<Integer, String> inputMap = new Map<Integer, String>{
+        1 => 'apple',
+        2 => 'banana',
+        3 => 'cherry',
+        4 => 'date'
+    };
+    
+    List<String> resultList = mapToListAndSet.MapToList(inputMap);
+    List<String> expectedList = new List<String>{'apple', 'banana', 'cherry', 'date'};
+    System.assertEquals(expectedList, resultList);
+   
+    Set<Integer> resultSet = mapToListAndSet.MapToSet(inputMap);
+    Set<Integer> expectedSet = new Set<Integer>{1, 2, 3, 4};
+    System.assertEquals(expectedSet, resultSet);
+    
+   
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}
