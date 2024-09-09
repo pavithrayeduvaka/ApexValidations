@@ -1,0 +1,45 @@
+//Test Script
+/*
+public class PrimeNumberChecker {
+
+    public List<Boolean> checkPrimeNumbers(List<Integer> inputList) {
+        List<Boolean> resultList = new List<Boolean>();
+
+        for (Integer num : inputList) {
+            resultList.add(isPrime(num));
+        }
+
+        return resultList;
+    }
+
+    private Boolean isPrime(Integer n) {
+        if (n == null || n <= 1) {
+            return false;
+        }
+
+        for (Integer i = 2; i * i <= n; i++) {
+            if (Math.mod(n, i) == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    PrimeNumberChecker checker = new PrimeNumberChecker();
+
+    List<Integer> inputList = new List<Integer>{2, 3, 4, 5, 6, 7, 8, 9, 10};
+    List<Boolean> resultList = checker.checkPrimeNumbers(inputList);
+
+    List<Boolean> expectedResult = new List<Boolean>{true, true, false, true, false, true, false, false, false};
+
+    System.assertEquals(expectedResult, resultList);
+
+    } catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

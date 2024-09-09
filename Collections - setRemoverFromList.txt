@@ -1,0 +1,35 @@
+// Test Script
+/*
+public class ListSetElementRemover {
+
+    public List<Integer> removeElementsFromList(List<Integer> inputList, Set<Integer> removeSet) {
+        List<Integer> resultList = new List<Integer>();
+
+            for (Integer item : inputList) {
+            if (!removeSet.contains(item)) {
+                resultList.add(item);
+            }
+        }
+
+        return resultList;
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    ListSetElementRemover remover = new ListSetElementRemover();
+    
+    List<Integer> inputList = new List<Integer>{1, 2, 3, 4, 5, 6};
+    Set<Integer> removeSet = new Set<Integer>{3, 4, 7};
+    List<Integer> resultList = remover.removeElementsFromList(inputList, removeSet);
+    
+    List<Integer> expectedList = new List<Integer>{1, 2, 5, 6};
+    System.assertEquals(expectedList, resultList);
+    
+    System.debug(resultList);
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

@@ -1,0 +1,29 @@
+// Test Script
+/*
+public class SetIntersectionCalculator {
+
+    public Set<Integer> calculateSetIntersection(Set<Integer> set1, Set<Integer> set2) {
+        Set<Integer> intersectionSet = new Set<Integer>();
+        intersectionSet.addAll(set1);
+        intersectionSet.retainAll(set2);
+        return intersectionSet;
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    SetIntersectionCalculator calculator = new SetIntersectionCalculator();
+    
+    Set<Integer> set1 = new Set<Integer>{1, 2, 3, 4, 5};
+    Set<Integer> set2 = new Set<Integer>{4, 5, 6, 7};
+    Set<Integer> resultSet = calculator.calculateSetIntersection(set1, set2);
+    
+    Set<Integer> expectedSet = new Set<Integer>{4, 5};
+    System.assertEquals(expectedSet, resultSet);
+   
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

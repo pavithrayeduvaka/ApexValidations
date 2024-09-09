@@ -1,0 +1,35 @@
+//Test Script
+/*
+public class EvenOddChecker {
+
+    public Set<Boolean> checkEvenOdd(Set<Integer> inputSet) {
+       
+        Set<Boolean> resultSet = new Set<Boolean>();
+        for (Integer num : inputSet) {
+            if (Math.mod(num, 2) == 0) {
+                resultSet.add(true);  
+            } else {
+                resultSet.add(false); 
+            }
+        }
+        return resultSet;
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    EvenOddChecker checker = new EvenOddChecker();
+
+    Set<Integer> inputSet = new Set<Integer>{1, 2, 3};
+    Set<Boolean> resultSet = checker.checkEvenOdd(inputSet);
+
+   
+    Set<Boolean> expectedResult = new Set<Boolean>{false,true}; 
+  
+    System.assertEquals(expectedResult, resultSet);
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

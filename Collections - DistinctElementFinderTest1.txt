@@ -1,0 +1,24 @@
+//Test Script
+/*
+public class DistinctElementFinder {
+
+    public Set<Integer> findDistinctElements(List<Integer> inputList) {
+        Set<Integer> resultSet = new Set<Integer>();
+        resultSet.addAll(inputList);
+        return resultSet;
+    }
+}
+*/
+PLACHOLDER
+public class CustomException extends Exception {}
+
+try {
+    DistinctElementFinder finder = new DistinctElementFinder();
+    
+    List<Integer> testList = new List<Integer>{1, 2, 3, 3};
+    Set<Integer> resultSet = finder.findDistinctElements(testList);
+    System.assertEquals(3, resultSet.size());
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

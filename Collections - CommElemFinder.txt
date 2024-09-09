@@ -1,0 +1,31 @@
+//Test Script
+/*
+public class CommonElementsFinder {
+public List<string> findCommonElements(List<string> list1, List<string> list2) {
+        
+
+        Set<string> set1 = new Set<string>(list1);
+        Set<string> set2 = new Set<string>(list2);
+        set1.retainAll(set2); 
+        return new List<string>(set1); 
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    CommonElementsFinder cf = new CommonElementsFinder();
+
+    List<string> list1 = new List<string>{'A', 'B', 'C', 'D' };
+    List<string> list2 = new List<string>{'C', 'D'};
+
+    List<string> commonElements = cf.findCommonElements(list1, list2);
+    List<string> expectedCommon = new List<string>{'C', 'D'};
+    System.assertEquals(expectedCommon, commonElements);
+    
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}
+

@@ -1,0 +1,28 @@
+//Test Script
+/*
+
+public class ListToSetConverter {
+
+    public Set<String> convertListToSet(List<String> inputList) {
+        Set<String> resultSet = new Set<String>();
+        resultSet.addAll(inputList);
+        return resultSet;
+    }
+}
+
+*/
+PLACHOLDER
+public class CustomException extends Exception {}
+
+try {
+    ListToSetConverter converter = new ListToSetConverter();
+    
+    List<String> testList = new List<String>{'apple', 'banana', 'apple', 'orange'};
+    Set<String> resultSet = converter.convertListToSet(testList);
+    
+    System.assertEquals(3, resultSet.size());
+
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

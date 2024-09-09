@@ -1,0 +1,27 @@
+//Test Script
+/*
+public class DuplicateRemover {
+
+    public List<String> removeDuplicates(List<String> inputList) {
+        Set<String> uniqueSet = new Set<String>();
+        uniqueSet.addAll(inputList);
+        List<String> resultList = new List<String>();
+        resultList.addAll(uniqueSet);
+        return resultList;
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    DuplicateRemover remover = new DuplicateRemover();
+    
+    List<String> testList = new List<String>{'apple', 'banana', 'apple', 'orange'};
+    list<String> newList = remover.removeDuplicates(testList);
+    
+    System.assertEquals(3, newList.size());
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

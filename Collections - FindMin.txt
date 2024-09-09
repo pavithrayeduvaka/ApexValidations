@@ -1,0 +1,32 @@
+//Test Script
+/*
+public class MinimumElementFinder {
+
+    public Integer findMinimumElement(Set<Integer> inputSet) {
+        
+        Integer min = null;
+        for (Integer num : inputSet) {
+            if (min == null ||num < min) {
+                min = num;
+            }
+        }
+        return min;
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    MinimumElementFinder mel = new MinimumElementFinder();
+
+    Set<Integer> set1 = new Set<Integer>{1, 2, 3, 4, 5};
+    
+    Integer min = mel.findMinimumElement(set1);
+    System.assertEquals(1, min);
+
+    System.debug(min);
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}

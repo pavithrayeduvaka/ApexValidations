@@ -1,0 +1,30 @@
+//Test Script
+/*
+public class ListAverageCalculator {
+public Integer FindSum(List<Integer> inputList) {
+        
+
+        Integer sum = 0;
+        for (Integer num : inputList) {
+            sum += num;
+        }
+        return sum/inputList.size();
+    }
+}
+*/
+PLACEHOLDER
+public class CustomException extends Exception {}
+
+try {
+    ListAverageCalculator lac = new ListAverageCalculator();
+
+    List<Integer> list1 = new List<Integer>{1, 2, 3, 4, 5};
+
+    Integer avg = lac.FindSum(list1);
+    System.assertEquals(3, avg);
+    System.debug(avg);
+
+} catch (Exception exc) {
+    throw new CustomException('There was an error: ' + exc.getMessage());
+}
+
