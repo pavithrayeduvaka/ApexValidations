@@ -1,0 +1,17 @@
+//Test Script
+/* 
+integer age = 25;
+integer age2 = 60;
+        age = age2;
+system.debug(age);
+}
+*/
+PLACEHOLDER
+public class customException extends exception{}
+try{
+system.assertEquals(60, age);
+system.debug(age);
+}
+catch(exception exc){
+throw new customException('there is an error!' +exc.getMessage()); 
+}
