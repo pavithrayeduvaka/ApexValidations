@@ -1,0 +1,37 @@
+//Test Script
+/*
+integer x = 1600;
+integer y = 200;
+integer addition = x + y;
+system.debug(addition);
+
+integer subtraction = x - y;
+system.debug(subtraction);
+
+integer multiplication = x * y;
+system.debug(multiplication);
+
+integer division = x / y;
+system.debug(division);
+
+
+integer remainder = math.mod(x,y);
+system.debug(remainder);
+*/
+PLACEHOLDER
+public class CustomException extends Exception{}
+try{
+    
+    System.assertequals(1800, addition);
+
+    System.assertequals(1400, subtraction);
+
+    System.assertequals(320000, multiplication);
+
+    System.assertequals(8, division);
+
+    System.assertequals(0, remainder);
+
+} catch(Exception exc){
+    throw new CustomException('there is a error '+exc.getMessage());
+}

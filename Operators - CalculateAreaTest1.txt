@@ -1,0 +1,17 @@
+//Test Script
+
+/*
+integer l = 500;
+integer b = 25;
+decimal  area = l*b;
+system.debug(area);
+
+*/
+PLACEHOLDER
+public class CustomException extends Exception{}
+try{
+
+    System.assertequals(12500, area);
+} catch(Exception exc){
+    throw new CustomException('there is a error '+exc.getMessage());
+}

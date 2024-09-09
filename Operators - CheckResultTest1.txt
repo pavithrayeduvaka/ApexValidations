@@ -1,0 +1,22 @@
+//Test Script
+/*
+
+integer a = 5;
+integer b = 3;
+integer c = 2;
+integer result = a+b*c;
+integer result2 = (a+b)*c;
+system.debug(result);
+system.debug(result2);
+
+*/
+PLACEHOLDER
+public class CustomException extends Exception{}
+try{  
+    System.assertequals(11,result);
+    System.assertequals(16, result2);
+    
+} catch(Exception exc){
+    throw new CustomException('there is a error '+exc.getMessage());
+}
+

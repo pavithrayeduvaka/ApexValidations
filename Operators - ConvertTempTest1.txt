@@ -1,0 +1,14 @@
+//Test Script
+/*
+decimal far = 500;
+decimal  cel = (far - 32)*5/9;
+system.debug(cel);
+
+*/
+PLACEHOLDER
+public class CustomException extends Exception{}
+try{
+    System.assertequals(260, cel);
+} catch(Exception exc){
+    throw new CustomException('there is a error '+exc.getMessage());
+}

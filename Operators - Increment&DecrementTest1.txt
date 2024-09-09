@@ -1,0 +1,35 @@
+//Test Script
+/*
+
+integer Count = 5;
+integer  count1 = count + 1;
+system.debug(count1);
+
+integer count2 = count - 2;
+system.debug(count2);
+
+integer  count3 = count + 10;
+system.debug(count3);
+
+integer count4 = count - 3;
+system.debug(count4);
+
+
+
+*/
+PLACEHOLDER
+public class CustomException extends Exception{}
+try{
+
+    System.assertequals(6, count1);
+
+    System.assertequals(3, count2);
+
+    System.assertequals(15, count3);
+
+    System.assertequals(2, count4);
+  
+    } catch(Exception exc){
+    throw new CustomException('there is a error '+exc.getMessage());
+}
+
